@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+/*Importação de fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Great+Vibes&family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+/*Variaveis de Fontes e Cores*/
+:root{
+    --cor0: rgb(33,31,34);
+    --cor1: rgb(41, 41, 41);
+    --cor2: rgba(255, 255, 255, 1);
+    --cor3: rgba(239, 221, 193, 1);
+    --cor4: rgba(235, 170, 158, 1); 
+    --cor5: rgba(233, 147, 144, 1);
+}
+:root{
+    --font1: 'Great Vibes', cursive;
+    --font2:  'Bebas Neue', sans-serif;
+    --font3: 'Josefin Sans', sans-serif;
+}
+
+body{
+ margin: 0px;
+ padding: 0px;
+}
+header{
+    background-color: var(--cor0);
+    padding: 10px 30px 10px 30px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+header nav a{
+    font-family: var(--font2);
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+    color: var(--cor4);
+}
+header nav a:hover{
+    text-decoration:overline;
+    color: var(--cor3);
+}
+footer{
+    background-color: var(--cor0);
+    border:solid;
+    border-width: 1px 0px 0px 0px;
+    border-color: var(--cor2);
+    padding: 15px 10px 15px 10px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+footer p{
+    font-family: var(--font3);
+    color: var(--cor2);
+}
+footer a{
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+    color: var(--cor3);
+}
+h1,h2{
+    font-family: var(--font1);
+    font-weight: 200;
+    font-size: 35px;
+    color: var(--cor4);
+}
+button{
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: var(--font2);
+    font-size: 15px;
+    color: var(--cor2);
+    border: solid 1px var(--cor1);
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 5px 35px 5px 35px;
+}
+button:hover{
+    background-color: var(--cor5);
+    color: var(--cor1);
+    font-size: 16px;
+    border-color: var(--cor5);
+ }
+.TirarParagrafo{
+    margin: 0px;
+}
+#FundoDeTela{
+    background-image: url(./imagens/fundo\ de\ tela.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*opacity: 0.9;*/
+    padding: 150px;
+}
+#FundoDeTela h1{
+    margin-bottom: 0px;
+}
+#FundoDeTela p{
+    margin: 5px 0px 5px 0px;
+    font-family: var(--font2);
+    font-weight: 100;
+    font-size: 15px;
+    color: var(--cor2);
+    letter-spacing: 1px;
+}
+#Desconto{
+    padding: 10px;
+    background-color: var(--cor4);
+}
+#Desconto p{
+    font-family: var(--font2);
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+#Desconto #CentralizadoDesconto{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Desconto #CentralizadoDesconto .deslocamento{
+    padding: 0px 100px 0px 100px;
+}
+#Menu{
+    padding: 50px;
+    background-color: var(--cor0);
+}
+#Menu #CetralizarTextoDeMenu{
+    text-align: center;
+}
+#Menu #CetralizarTextoDeMenu h2{
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+#Menu #CetralizarTextoDeMenu p{
+    font-family: var(--font2);
+    font-size: 18px;
+    font-weight: 100;
+    color: var(--cor2);
+}
+#Menu #CetralizarTextoDeMenu hr{
+    width: 100px;
+    border-color: var(--cor4);
+}
+#Menu #CentralizadoMenu {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#Menu #CentralizadoMenu .EspacamentoDeMenu{
+    padding: 0px 100px 0px 100px;
+}
+#Menu #CentralizadoMenu .EspacamentoDeMenu h5{
+    font-family: var(--font1);
+    color: var(--cor4);
+    font-weight: 100;
+    font-size: 25px;
+    margin: 5px 0px 0px 0px;
+}
+#Menu #CentralizadoMenu .EspacamentoDeMenu ul{
+    list-style-type: none;  
+}
+ul p{
+    font-family: var(--font2);
+    color: var(--cor2);
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-style: 15px;
+}
+ul #Bolo{
+    list-style-image: url(./imagens/Bolo.png);
+}
+ul #Torta{
+    list-style-image: url(./imagens/Torta.png);
+    
+}
+ul #Acai{
+    list-style-image: url(./imagens/Açai.png);
+}
+ul #Feijoada{
+    list-style-image: url(./imagens/Feijoada.png);
+}
+ul #Peixe{
+    list-style-image: url(./imagens/Peixe.png);
+}
+ul #Sopa{
+    list-style-image: url(./imagens/Sopa.png);
+}
+#SobreORestaurante{
+    background-image: url(./imagens/fundo\ de\ tela4.jpg);
+    /*opacity: 0.9;*/
+    background-size: cover; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 150px;
+
+    /*Para deslocar a div*/
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+#SobreORestaurante #DivDaCategoriaSobre{
+    background-color: rgba(33, 31, 34, 0.836);
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    width: 300px;
+}
+#SobreORestaurante #DivDaCategoriaSobre h5{
+    margin-top: 0;
+    font-family: var(--font2);
+    font-size: 15px;
+    font-weight: 100;
+    color: var(--cor2);
+}
+#SobreORestaurante #DivDaCategoriaSobre p{
+    font-family: var(--font3);
+    color: var(--cor2);
+}
+#FormasDeContato{
+    padding: 50px 0px 50px 20px ;
+    background-color: var(--cor0);
+}
+#FormasDeContato h3{
+    font-family: var(--font2);
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: var(--cor2);
+}
+#FormasDeContato p{
+    font-family: var(--font3);
+    color: var(--cor2);
+    width: 280px;
+}
+#FormasDeContato ul{
+    list-style-type: none;
+    font-family: var(--font3);
+    color: var(--cor2);
+}
+#FormasDeContato ul li{
+    padding: 20px 0px 0px 0px;
+}
